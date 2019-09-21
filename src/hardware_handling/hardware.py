@@ -17,6 +17,7 @@ class Hardware(threading.Thread):
         self._stationId_ = 0
         self.start()
         self._setOutputLEDInit_()
+        self._stationChanged_ = False
 
     def _getInputStates_(self):
         # update needed ...
