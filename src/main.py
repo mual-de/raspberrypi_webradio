@@ -6,8 +6,11 @@ import time
 
 class Webradio():
     def __init__(self):
+        print("LOAD DB")
         self._db_ = PlaylistDatabase("test","test","test")
+        print("LOAD VLC")
         self._audioInterface_ = AudioInterface('http://streams.radiobob.de/bob-classicrock/aac-64/mediaplayer')
+        print("LOAD HARDWARE")
         self._hardware_ = Hardware(self.changeStation)
         # audioInterface.changeStation('http://streams.radiobob.de/bob-live/mp3-192/mediaplayer')
         print("webradio started")

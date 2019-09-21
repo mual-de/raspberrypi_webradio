@@ -1,8 +1,8 @@
 import threading
 import time
 from smbus2 import SMBus
-from adc_knob import BigKnob
-from switch import Switch
+from .adc_knob import BigKnob
+from .switch import Switch
 
 class Hardware(threading.Thread):
     
