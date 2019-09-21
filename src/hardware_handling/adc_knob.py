@@ -25,7 +25,7 @@ class BigKnob():
         
         # start adafruit ads1115 adc lib
         print("START ADC")
-        self._adc_ = Adafruit_ADS1x15.ADS115()
+        self._adc_ = Adafruit_ADS1x15.ADS1115()
 
 
     def getActualFMFrequency(self):
