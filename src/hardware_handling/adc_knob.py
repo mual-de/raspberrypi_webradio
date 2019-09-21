@@ -33,7 +33,7 @@ class BigKnob():
         """
         counter = self._adc_.read_adc(0,gain=1)
 
-        for key,val in BigKnob._LINEARMAPPING_:
+        for key,val in BigKnob._LINEARMAPPING_.items():
             # check if measured value can be key +- 30% failure
             if counter >= (val - val*0.3) and counter <= (val + val*0.3):
                 return key
