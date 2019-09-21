@@ -40,6 +40,9 @@ class Hardware(threading.Thread):
             self._getInputStates_()
             if self._stationChanged_:
                 self._stationChanged_ = False
+                print("station changed")
+                print(self._stationId_)
+                print("NEW CHANNEL!")
                 self._callbackFunction_(self._stationId_,"FM")
 
             
