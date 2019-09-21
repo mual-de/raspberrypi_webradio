@@ -17,7 +17,7 @@ class Webradio():
 
     def changeStation(self,frequency, broadcastingTechnology):
         url = self._db_.getStationURL(frequency,broadcastingTechnology)
-        print("NEW URL: %s" url)
+        print("NEW URL: %s", url)
         self._audioInterface_.changeStation(url)
 
 
