@@ -19,7 +19,7 @@ class AudioInterface(threading.Thread):
             self.player.play()
             time.sleep(2)
             while(self.player.is_playing()):
-                time.sleep(1)
+                time.sleep(3)
             time.sleep(2)
 
     def changeStation(self, station):

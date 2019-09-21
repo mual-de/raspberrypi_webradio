@@ -19,7 +19,9 @@ class Hardware(threading.Thread):
         self._setOutputLEDInit_()
 
     def _getInputStates_(self):
-        switchByte = self._i2cBus_.read_byte_data(self._ARDUINO_ADRESS_,1)
+        # update needed ...
+        #switchByte = self._i2cBus_.read_byte_data(self._ARDUINO_ADRESS_,1)
+        switchByte = 0xFF
         self._modeSwitch_ = Switch(bool(switchByte%0x01))
         self._frequencyBand1Active = bool(switchByte%0x02)
         self._frequencyBand2Active = bool(switchByte%0x04)

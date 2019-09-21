@@ -41,4 +41,4 @@ class BigKnob():
         return "0"
 
     def getActualStation(self):
-        return int(self.getActualFMFrequency()) - 93
+        return int(self.getActualFMFrequency()) - 92
