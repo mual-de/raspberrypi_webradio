@@ -38,7 +38,7 @@ class BigKnob():
             if counter >= (val - 100) and counter <= (val + 100):
                 return key
 
-        return "0"
+        return "92"
 
     def getActualStation(self):
         return int(self.getActualFMFrequency()) - 92
